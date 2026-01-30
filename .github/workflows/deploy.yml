@@ -26,8 +26,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Delete node_modules and package-lock.json
+        run: rm -rf node_modules package-lock.json
+
       - name: Install dependencies
-        run: npm install --include=optional
+        run: npm install --force
+
+      - name: Ensure rollup binary exists
+        run: ls -la node_modules/@rollup/rollup-linux-x64-gnu || npm install @rollup/rollup-linux-x64-gnu --save-optional
 
       - name: Build
         env:
