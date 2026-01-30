@@ -1,0 +1,7 @@
+{
+  "name": "手里·InForm",
+  "description": "一个专为手作爱好者设计的视觉日记，记录从灵感到成品的全过程。支持陶艺、木作、金工等多种创作模式。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
