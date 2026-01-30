@@ -31,7 +31,7 @@ jobs:
         run: npm ci --include=optional
 
       - name: Workaround rollup optional binary
-        run: npm install @rollup/rollup-linux-x64-gnu --no-save
+        run: npm install @rollup/rollup-linux-x64-gnu@4.57.0 --no-save
 
       - name: Build
         env:
