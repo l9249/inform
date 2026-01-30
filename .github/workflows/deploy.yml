@@ -27,8 +27,8 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install
-        run: npm install
+      - name: Install (with optional deps)
+        run: npm ci --include=optional
 
       - name: Build
         env:
