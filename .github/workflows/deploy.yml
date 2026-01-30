@@ -28,7 +28,7 @@ jobs:
           cache: npm
 
       - name: Install (with optional deps)
-        run: npm ci --include=optional
+        run: npm install --include=optional
 
       - name: Workaround rollup optional binary
         run: npm install @rollup/rollup-linux-x64-gnu@4.57.0 --no-save
